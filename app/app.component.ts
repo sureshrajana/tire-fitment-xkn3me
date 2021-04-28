@@ -48,11 +48,11 @@ export class AppComponent {
         console.log("json" + JSON.stringify(this.styleList));
       });
   }
-  complete() {
-    this.stepper.selected.completed = true;
-    this.stepper.selected.editable = false;
-    this.stepper.next();
-  }
+  // complete() {
+  //   this.stepper.selected.completed = true;
+  //   this.stepper.selected.editable = false;
+  //   this.stepper.next();
+  // }
 
   next() {
     this.stepper.next();

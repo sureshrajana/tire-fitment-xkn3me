@@ -12,6 +12,7 @@ export class AppComponent {
   imgFlag: boolean = false;
   makeList: any;
   modelList: any;
+  madeList:any;
   styleList: any;
   tyre: any;
   make: any;
@@ -28,6 +29,7 @@ export class AppComponent {
       .get("https://6080be3273292b0017cdbf2a.mockapi.io/years")
       .subscribe(data => {
         this.tyreList = data.year;
+        console.log("typeist",JSON.stringify(this.tyreList))
       });
     this.http
       .get("https://6080be3273292b0017cdbf2a.mockapi.io/makes")

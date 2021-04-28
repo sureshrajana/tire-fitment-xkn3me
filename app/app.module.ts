@@ -5,10 +5,10 @@ import { FormsModule } from "@angular/forms";
 import { MatStepperModule, MatIconModule } from "@angular/material";
 
 import { AppComponent } from "./app.component";
-import { HelloComponent } from "./hello.component";
+
 import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app.routing.module";
-import { HomeComponent } from "./home.component";
+
 
 @NgModule({
   imports: [
@@ -20,7 +20,7 @@ import { HomeComponent } from "./home.component";
     HttpClientModule,
     AppRoutingModule
   ],
-  declarations: [AppComponent, HelloComponent,HomeComponent],
+  declarations: [AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

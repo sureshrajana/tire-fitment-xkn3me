@@ -85,21 +85,21 @@ export class AppComponent {
     this.stepper.selected.editable = false;
     this.stepper.next();
   }
-  select(type) {
-    if (type) {
-      this.typeFlag = true;
-      this.imgFlag = false;
-    } else {
-      this.typeFlag = false;
-    }
-    console.log("trpe" + type);
-  }
-  choose(choose) {
-    if (choose == "sample") {
-      this.chooseFlag = true;
-      this.imgFlag = true;
-    }
-  }
+  // select(type) {
+  //   if (type) {
+  //     this.typeFlag = true;
+  //     this.imgFlag = false;
+  //   } else {
+  //     this.typeFlag = false;
+  //   }
+  //   console.log("trpe" + type);
+  // }
+  // choose(choose) {
+  //   if (choose == "sample") {
+  //     this.chooseFlag = true;
+  //     this.imgFlag = true;
+  //   }
+  // }
 
   startover() {
     window.location.reload();
